@@ -1,0 +1,342 @@
+.login-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+
+  }
+  .login-page-wrapper {
+    min-height: 100vh;
+    background-image: url("/public/images/Login_sighup_background.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .login-page-wrapper::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4); /* dark overlay */
+    z-index: 0;
+  }
+  .login-background,
+  .footer {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .netflix-logo {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    width:148px;
+    z-index: 10; 
+    height: 92;
+    left: 120px;
+    padding-top: 24px;
+    padding-right: 48px;
+    padding-bottom: 28px;
+    padding-left: 48px;
+    gap: 744px;
+
+  }
+  
+  .form-box {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    font-family: "Netflix Sans", sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: rgba(255, 255, 255, 1)    ;
+    width:450px;
+    height: 708px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-top: 22px;
+    margin-bottom: 12px;
+  }
+  .form-box h2{
+    width: 314px;
+    height: 40px;
+    font-family: "Netflix Sans", sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    margin-left: 48px;
+  }
+  .form-box input {
+    width: 314px;
+    height: 56px;
+    border-radius: 4px;
+    padding-top: 8px;
+    padding-right: 24px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    gap: 16px;
+    border: 1px solid  rgba(128, 128, 128, 1);
+    background: rgba(0, 0, 0, 0.5);
+    margin-bottom: 16px;
+    font-family: "ABeeZee", sans-serif;
+    font-weight: 400;
+    margin-left: 48px;
+    color: #ffffff;
+
+  }
+  .form-box input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+  }
+  
+  .form-box button {
+    width:355px;
+    height:40px;
+    background: rgba(229, 9, 20, 1);
+    border: none;
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    font-family: "ABeeZee", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle; 
+    margin-bottom: 16px;
+    margin-left: 48px;
+
+  }
+  .forgot_password {
+    width: 134;
+    height: 19;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle; 
+    font-family: "ABeeZee", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
+
+  }
+
+  .login-background {
+    background-image: url("/public/images/Login_sighup_background.jpg");  /* ← relative to public folder */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .remember-me {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    user-select: none;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 1);
+  }
+  
+  .remember-me span{
+    cursor: pointer;
+    user-select: none;
+    font-size: 14px;
+    margin-top: 8px;
+    color: white;
+  }
+  .remember-me input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .remember-me .checkmark {
+    position: absolute;
+    left: 0;
+    top: -10px;
+    height: 16px;
+    width: 16px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.35);
+    border-radius: 2px;
+    margin-bottom:16px;
+  }
+  
+  .remember-me input[type="checkbox"]:checked + .checkmark {
+    background-color: rgba(255, 255, 255, 0.766);
+  }
+  
+  .remember-me input[type="checkbox"]:checked + .checkmark::after {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 0px;
+    width: 4px;
+    height: 8px;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+    
+  .extra-options {
+    margin-top: 20px;
+    font-size: 14px;
+    font-family: "ABeeZee", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #bbb;
+
+  }
+  .signup-link {
+    margin: 16px 0;
+  }
+  
+  .signup-link span {
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: "ABeeZee", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    
+  }
+  
+  .signup-link span:hover {
+    text-decoration: underline;
+  }
+  
+  .captcha-text {
+    width: 314px;
+    height: 32px;
+    font-size: 12px;
+    color: gray;
+    font-family: "Netflix Sans", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+
+  }
+  
+  .captcha-text a {
+    color: #3399ff;
+    text-decoration: none;
+  }
+  
+  .captcha-text a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer {
+    background: rgba(0, 0, 0, 0.7);
+    color: #999;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    vertical-align: middle; 
+  }
+  
+      
+  
+  .footer-contact {
+    font-family:"Netflix Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-decoration-style: solid;
+    text-decoration-thickness: 0%;
+    color: rgba(179, 179, 179, 1);
+    font-size: 16px;
+    margin-left:220px;
+    margin-top: 80px;
+  }
+  
+  .footer-contact a {
+    color: rgba(179, 179, 179, 1);
+    text-decoration: none;
+  }
+  .footer-contact a:hover {
+    color: #ffffff;
+  }
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; 
+    gap: 10px 40px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-left:220px;
+  }
+  
+  
+  .footer-links li {
+    width:211px;
+    margin-right: 60px;
+    font-size: 13px;
+    margin-bottom: 20px;
+
+  }
+  
+  .footer-links a {
+    color: rgba(179, 179, 179, 1);
+    text-decoration: none;
+    font-family:"Netflix Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 0%;
+  }
+  
+  .footer-links a:hover {
+    color: #ffffff;
+
+  }
+  
+  .footer-lang {
+    margin-top: 10px;
+    margin-left:220px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-lang button {
+    background: transparent;
+    border: 1px solid #999;
+    color: #ffffff;
+    padding: 6px 12px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .vector-logo {
+    margin-right: 12px;
+    margin-top: 3px;
+  }
