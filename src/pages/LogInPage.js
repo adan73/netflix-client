@@ -8,7 +8,6 @@ const LoginPage = () => {
     <div className="login-page-wrapper">
          <img src="images/logo.png" alt="Netflix Logo" className="netflix-logo" />
         <div className="login-background">
-
           <LoginForm />
         </div>
         <Footer />

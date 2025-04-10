@@ -21,19 +21,18 @@ const LoginForm = () => {
       },
       body: JSON.stringify(body),
     });
-
-
       const data = await response.json();
 
       if (response.ok) {
         document.cookie = `token=${data.token}; max-age=3600; path=/`;
+        sessionStorage.setItem('userId', data.userId);
 
         navigate('/WhosWatchingPage');
       } else {
         alert(data.message || 'Login failed');
       }
     } catch (err) {
-      console.error('❌ Login error:', err);
+      console.error('Login error:', err);
       alert('Server error. Please try again.');
     }
   };

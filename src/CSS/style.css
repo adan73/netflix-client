@@ -20,7 +20,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.4); /* dark overlay */
+    background: rgba(0, 0, 0, 0.4);
     z-index: 0;
   }
   .login-background,
@@ -340,3 +340,134 @@
     margin-right: 12px;
     margin-top: 3px;
   }
+
+  .WhosWatchingPage_body {
+    background: rgba(20, 20, 20, 1);  
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .UsersBox {
+    width: 836;
+    height: 282;
+    top: 176px;
+    left: 302px;
+    gap: 67px;
+    background-color: #3399ff;
+  }
+  .profile-container {
+    text-align: center;
+    color: rgba(128, 128, 128, 1);
+    padding: 2rem;
+    font-family: "ABeeZee", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+  }
+  .profile-container h2 {
+    font-family: "ABeeZee", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: rgba(255, 255, 255, 1);
+
+  }
+  
+  .profile-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  
+  .profile-card {
+    margin-top:40px;
+    width: 144;
+    height: 144;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .avatar-wrapper {
+    position: relative;
+  }
+  
+  .avatar-img {
+    width: 144px;
+    height: 144px;
+    border-radius: 10px;
+  }
+  
+  .delete-icon {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: rgb(235, 0, 0);
+    color: white;
+    border-radius: 50%;
+    padding: 2px 5px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    z-index: 0;
+
+  }
+  
+  .add-profile .plus-icon {
+    font-size:111px;
+    color:rgba(20, 20, 20, 1);
+  }
+  
+  .add-profile .avatar-wrapper {
+    background: rgba(128, 128, 128, 1);
+    border-radius: 50% ;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .add-profile-box{
+    margin-left: 35px;
+    margin-top: 40px;
+
+  }
+  .profile-card input{
+    margin-top: 12px;
+    border-radius: 5px ;
+    width: 171px;
+    height: 33px;
+    font-size: 20px;
+  }
+
+  .homePage-container {
+    background-color: rgb(217, 51, 51);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  .home-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .home-name {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
