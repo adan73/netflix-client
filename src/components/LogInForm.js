@@ -60,7 +60,7 @@ const LoginForm = () => {
       <div className="extra-options">
         <label className="remember-me">
           <input type="checkbox" />
-          <span className="checkmark"></span>
+          <span className="checkMark"></span>
           Remember me
         </label>
         <p className="signup-link">
