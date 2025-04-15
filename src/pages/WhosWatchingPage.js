@@ -4,7 +4,7 @@ import SelectAvatar from '../components/SelectAvatar';
 
 const WhosWatchingPage = () => {
   return (
-<div className="WhosWatchingPage_body">
+    <div className="WhosWatchingPage_body">
       <SelectAvatar />
     </div>  );
 };
