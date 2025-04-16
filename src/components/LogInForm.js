@@ -64,8 +64,9 @@ const LoginForm = () => {
           Remember me
         </label>
         <p className="signup-link">
-          New to Netflix? <span>Sign up now.</span>
+          New to Netflix? <span onClick={() => navigate('/signUp')}>Sign up now.</span>
         </p>
+
         <p className="captcha-text">
           This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#">Learn more.</a>
         </p>
