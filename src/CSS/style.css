@@ -542,7 +542,7 @@ html, body {
   
   .nav-links li:hover {
     font-weight: 700;
-    color: rgb(255, 255, 255);
+    color: rgb(230, 0, 0);
   }
 
   .nav-left-side .netflix-logo {
@@ -1332,4 +1332,13 @@ html, body {
 
 .footer-social-icons svg:hover {
   color: #e50914;
+}
+
+.tv-list-wrapper .movie-list-row {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 35px;
+  overflow-x: unset !important;
+  padding-bottom: 20px;
+  scrollbar-width: none;
 }

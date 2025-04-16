@@ -10,21 +10,17 @@ const NavigationBar = () => {
   
     const profileAvatar = sessionStorage.getItem('selectedAvatarPng');
 
-    const handleLogoClick = () => {
-        navigate('/home');
-    };
-   
   
     return (
        <div className="nav-main-container">
            <div className="nav-left-side">
-                <img src="images/logo.png" alt="Netflix Logo" className="netflix-logo" onClick={() => handleLogoClick()}/>
+                <img src="images/logo.png" alt="Netflix Logo" className="netflix-logo"  onClick={() => navigate('/home')}/>
                 <ul className="nav-links">
-                 <li>Home</li>
-                 <li className="tallerWords">TV Shows</li>
-                 <li>Movies</li>
-                 <li className="tallerWords">New & Popular</li>
-                 <li className="shortWords">My List</li>
+                 <li onClick={() => navigate('/home')}>Home</li>
+                 <li className="tallerWords" onClick={() => navigate('/TVShowsPage')}>TV Shows</li>
+                 <li onClick={() => navigate('/MoviesPage')}>Movies</li>
+                 <li className="tallerWords" onClick={() => navigate('/New&Popular')}>New & Popular</li>
+                 <li className="shortWords" onClick={() => navigate('/MyListPage')}>My List</li>
                  <li>Browse</li>
                 </ul>
             </div>
