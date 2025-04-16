@@ -22,8 +22,6 @@ const SelectAvatar = () => {
   const userId = sessionStorage.getItem('userId');
 
   useEffect(() => {
-    console.log("🎯 userId in WhosWatchingPage:", sessionStorage.getItem('userId'));
-
     const fetchAvatars = async () => {
       try {
         const response = await fetch(`https://netflix-server-4a8a.onrender.com/api/avatars/${userId}`, {

@@ -27,7 +27,7 @@ const LoginForm = () => {
         document.cookie = `token=${data.token}; max-age=3600; path=/`;
         sessionStorage.setItem('userId', data.userId);
 
-        navigate('/WhosWatchingPage');
+        navigate('/WhoIsWatchingPage');
       } else {
         alert(data.message || 'Login failed');
       }

@@ -4,7 +4,7 @@ import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
 
 const NormalPageFooter = () => {
   return (
-    <footer className="normalpage-footer">
+    <footer className="normalPage-footer">
 
       <div className="footer-contact">
           <div className="footer-social-icons">

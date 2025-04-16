@@ -78,7 +78,7 @@ const MovieInfo = ({ data }) => {
             <span className="tag hd">HD</span>
           </div>
 
-          <div className="subtags">
+          <div className="subTags">
             <span className="tag warnings">action, violence</span> 
           </div>
           {data.lists?.includes("top10") && data.rank && (

@@ -86,7 +86,7 @@ const [isInMyList, setIsInMyList] = useState(false);
               <span className="tag hd">HD</span>
             </div>
 
-            <div className="subtags">
+            <div className="subTags">
               <span className="tag warnings">
                 {data.warnings || 'smoking, violence'}
               </span>

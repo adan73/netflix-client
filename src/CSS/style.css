@@ -357,7 +357,7 @@ html, body {
     margin-top: 3px;
   }
 
-  .WhosWatchingPage_body {
+  .WhoIsWatchingPage_body {
     background: rgba(20, 20, 20, 1);  
     width: 100vw;
     height: 100vh;
@@ -1258,7 +1258,7 @@ html, body {
     margin-left: 67px;
   }
   
-  .normalpage-footer {
+  .normalPage-footer {
   background:rgba(20, 20, 20, 1);
   color: #999;
   width: 100%;
@@ -1269,7 +1269,7 @@ html, body {
   transform: translateX(-50%);
 }
 
-.normalpage-footer .footer-links {
+.normalPage-footer .footer-links {
   display: flex;
   flex-wrap: wrap;
   gap: 0px 25px;
@@ -1278,12 +1278,12 @@ html, body {
   margin: 20px 0;
 }
 
-.normalpage-footer .footer-links li {
+.normalPage-footer .footer-links li {
   width: 211px;
   font-size: 13px;
 }
 
-.normalpage-footer .footer-links a {
+.normalPage-footer .footer-links a {
   color: rgba(179, 179, 179, 1);
   text-decoration: none;
   font-size: 14px;
@@ -1291,16 +1291,16 @@ html, body {
   text-decoration: underline;
 }
 
-.normalpage-footer .footer-links a:hover {
+.normalPage-footer .footer-links a:hover {
   color: #ffffff;
 }
 
-.normalpage-footer .footer-lang {
+.normalPage-footer .footer-lang {
   margin-top: 20px;
   margin-left: 0px;
 }
 
-.normalpage-footer .footer-lang button {
+.normalPage-footer .footer-lang button {
   background: transparent;
   border: 1px solid #999;
   color: #ffffff;
@@ -1309,12 +1309,12 @@ html, body {
   cursor: pointer;
 }
 
-.normalpage-footer .footer-bottom {
+.normalPage-footer .footer-bottom {
   font-size: 13px;
   color: #999;
   margin-top: 20px;
 }
-.normalpage-footer .footer-contact{
+.normalPage-footer .footer-contact{
   margin-left: -5px;
 }
 .footer-social-icons {

@@ -2,11 +2,11 @@ import React from 'react';
 import '../CSS/style.css';
 import SelectAvatar from '../components/SelectAvatar';
 
-const WhosWatchingPage = () => {
+const WhoIsWatchingPage = () => {
   return (
-    <div className="WhosWatchingPage_body">
+    <div className="WhoIsWatchingPage_body">
       <SelectAvatar />
     </div>  );
 };
 
-export default WhosWatchingPage;
+export default WhoIsWatchingPage;

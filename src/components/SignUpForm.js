@@ -30,7 +30,7 @@ const SignUpForm = () => {
         sessionStorage.setItem('userId', data.userId);
         console.log("✅ SIGNUP userId saved:", data.userId);
 
-        navigate('/WhosWatchingPage');
+        navigate('/WhoIsWatchingPage');
       } else {
         alert(data.message || 'Signup failed');
       }
