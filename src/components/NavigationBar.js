@@ -14,7 +14,7 @@ const NavigationBar = () => {
     return (
        <div className="nav-main-container">
            <div className="nav-left-side">
-                <img src="images/logo.png" alt="Netflix Logo" className="netflix-logo"  onClick={() => navigate('/home')}/>
+                <img src="https://www.ais.th/content/ais/th/en_us/consumers/entertainment/streaming-app/netflix/_jcr_content/root/container_1816311984/aiscontainer/columncontrol_copy_c/content1/image.coreimg.png/1688974800164/logo-netflix.png" alt="Netflix Logo" className="netflix-logo"  onClick={() => navigate('/home')}/>
                 <ul className="nav-links">
                  <li onClick={() => navigate('/home')}>Home</li>
                  <li className="tallerWords" onClick={() => navigate('/TVShowsPage')}>TV Shows</li>

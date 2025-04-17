@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import '../CSS/style.css';
+import { useNavigate } from 'react-router-dom';
 
 const SeriesInfo = ({ data }) => {
 const [isInMyList, setIsInMyList] = useState(false);
-  const userId = sessionStorage.getItem('userId');
+const userId = sessionStorage.getItem('userId');
+const navigate = useNavigate();
+
   useEffect(() => {
     const checkIfInMyList = async () => {
       if (!userId || !data?._id) {
@@ -63,8 +66,10 @@ const [isInMyList, setIsInMyList] = useState(false);
 
           <div className="featured-fade-bottom">
             <div className="featured-actions">
-              <button className="review-btn">▶ Review</button>
-              <div className="right-Buttons">
+            <button className="review-btn" onClick={() => navigate(`/review/${data._id}`)}>
+            ▶ Review
+          </button>              
+          <div className="right-Buttons">
               <button
                 className={`add-btn ${isInMyList ? 'remove-btn' : ''}`}
                 onClick={handleMyListToggle}
