@@ -17,7 +17,7 @@ const ReviewPage = () => {
 
   const fetchPrivateReviews = async () => {
     try {
-      const res = await fetch(`http://localhost:5000/api/reviews/${userId}/${movieId}`);
+      const res = await fetch(`https://netflix-server-4a8a.onrender.com/api/reviews/${userId}/${movieId}`);
       const data = await res.json();
       setPrivateReviews(data);
     } catch (err) {
@@ -27,7 +27,7 @@ const ReviewPage = () => {
 
   const fetchPublicReviews = async () => {
     try {
-      const res = await fetch(`http://localhost:5000/api/reviews/${movieId}`);
+      const res = await fetch(`https://netflix-server-4a8a.onrender.com/api/reviews/${movieId}`);
       const data = await res.json();
       setPublicReviews(data);
     } catch (err) {

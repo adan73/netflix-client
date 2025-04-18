@@ -1497,3 +1497,33 @@ html, body {
   color: #a1a1a1;
 
  }
+ 
+ .avatar-dropdown {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  right: 60px;
+  top: 60px;
+  background-color: #181818;
+  padding: 12px;
+  border-radius: 4px;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.7);
+}
+
+.dropdown-menu p {
+  color: white;
+  margin: 8px 0;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.dropdown-menu p:hover {
+  text-decoration: underline;
+}
