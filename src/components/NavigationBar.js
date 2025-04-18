@@ -7,7 +7,7 @@ import { IoSearch } from "react-icons/io5";
 
 const NavigationBar = () => {
     const navigate = useNavigate();
-  
+    const userRole = sessionStorage.getItem('userRole');
     const profileAvatar = sessionStorage.getItem('selectedAvatarPng');
     const [showMenu, setShowMenu] = useState(false);
     const toggleDropdown = () => setShowMenu(!showMenu);
@@ -32,6 +32,11 @@ const NavigationBar = () => {
           <li className="tallerWords" onClick={() => navigate('/New&Popular')}>New & Popular</li>
           <li className="shortWords" onClick={() => navigate('/MyListPage')}>My List</li>
           <li>Browse</li>
+          {userRole === 'admin' && (
+            <li onClick={() => navigate('/AdminPage')} className="tallerWords">
+              Add Movie/Series
+            </li>
+          )}
         </ul>
       </div>
 

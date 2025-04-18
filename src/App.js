@@ -9,6 +9,7 @@ import MoviesPage from './pages/MoviesPage';
 import NewPopular from './pages/New&Popular';
 import MyListPage from './pages/MyListPage';
 import ReviewPage from './pages/ReviewPage';
+import AdminPage from './pages/AdminPage';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/New&Popular" element={<NewPopular />} />
         <Route path="/MyListPage" element={<MyListPage />} />
         <Route path="/review/:movieId" element={<ReviewPage />} />
+        <Route path="/AdminPage" element={<AdminPage />} />
 
       </Routes>
     </Router>
