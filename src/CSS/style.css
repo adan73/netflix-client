@@ -1142,10 +1142,11 @@ html, body {
   }
   
   .movie-list-title {
+    color: white;
+    font-size: 48px;
+    font-weight: 700;
     margin-bottom: 12px;
     font-family: "Netflix Sans", sans-serif;
-    font-weight: 500;
-    font-size: 20px;
     letter-spacing: 0px;
     color: rgba(229, 229, 229, 1);
   }
