@@ -1143,12 +1143,12 @@ html, body {
   
   .movie-list-title {
     color: white;
-    font-size: 48px;
-    font-weight: 700;
+    font-size: 24px;
+    font-weight: 500;
     margin-bottom: 12px;
     font-family: "Netflix Sans", sans-serif;
     letter-spacing: 0px;
-    color: rgba(229, 229, 229, 1);
+    color: rgb(255, 255, 255);
   }
   .movie-list-row {
     display: flex;
@@ -1457,12 +1457,44 @@ html, body {
   background-color: #555;
 }
 
-.review-card{
-  margin-bottom: 12px;
+
+.review-card button {
+  margin-right: 10px;
+  margin-top: 8px;
+  padding: 5px 10px;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: 500;
 }
-.review-meta{
-  margin-bottom: 12px;
+
+.review-card button:hover {
+  background-color: #b0060f;
 }
+.review-card {
+  padding: 15px;
+  background-color: #1e1e1e;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.review-card .review-actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.review-meta,
+.review-text {
+  margin-bottom: 8px;
+}
+
 .review-movie-image{
  width: 800px;
  margin-top: -40px;
@@ -1598,4 +1630,101 @@ html, body {
 
 .admin-form button:hover {
   background: #f6121d;
+}
+
+.adminPage  .normalPage-footer{
+  margin-top: -10px;
+  
+}
+
+.browse-page-container {
+  color: white;
+  padding: 40px 60px;
+}
+
+.browse-title {
+  font-family: "ABeeZee", sans-serif;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 36px;
+  letter-spacing: 0px;
+  vertical-align: middle;
+}
+
+.browse-filters {
+  display: flex;
+  align-items: center;
+  font-family: "ABeeZee", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0px;
+  vertical-align: middle;
+  gap: 15px;
+}
+
+.browse-filters select {
+  background-color: #111;
+  color: white;
+  border: 1px solid gray;
+  padding: 6px 10px;
+  width: 246px;
+  height: 38px;
+
+}
+
+.ShortSelect {
+  background-color: #111;
+  color: white;
+  border: 1px solid gray;
+  padding: 6px 10px;
+  width:184px;
+  height: 38px;
+}
+
+
+.browse-filters label {
+  font-family: "ABeeZee", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0px;
+  vertical-align: middle;
+  color: rgba(255, 255, 255, 1);
+height: 17px;
+
+}
+.browse-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.browse-card {
+  position: relative;
+}
+
+.browse-img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.tag.red {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+.browserHeader{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 80px;
 }

@@ -63,6 +63,7 @@ const AdminPage = () => {
     
     <div className="page-wrapper">
       <NavigationBar />
+      <div className="adminPage">
     <div className="admin-form">
       <h2>Add New Movie / Series</h2>
       <form onSubmit={handleSubmit}>
@@ -84,7 +85,7 @@ const AdminPage = () => {
       </form>
     </div>
     <NormalPageFooter />
-
+    </div>
     </div>
   );
 };

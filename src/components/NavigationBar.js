@@ -31,10 +31,10 @@ const NavigationBar = () => {
           <li onClick={() => navigate('/MoviesPage')}>Movies</li>
           <li className="tallerWords" onClick={() => navigate('/New&Popular')}>New & Popular</li>
           <li className="shortWords" onClick={() => navigate('/MyListPage')}>My List</li>
-          <li>Browse</li>
+          <li onClick={() => navigate('/BrowsePage')}>Browse</li>
           {userRole === 'admin' && (
             <li onClick={() => navigate('/AdminPage')} className="tallerWords">
-              Add Movie/Series
+              Add Contact
             </li>
           )}
         </ul>
