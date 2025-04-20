@@ -53,7 +53,7 @@ const ReviewPage = () => {
       });
       if (res.ok) {
         setEditingReview(null);
-        fetchPrivateReviews(); // Refresh
+        fetchPrivateReviews(); 
       } else {
         alert(' Update failed');
       }

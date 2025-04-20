@@ -53,11 +53,11 @@ const BrowsePage = () => {
               {movie.lists?.includes('new') && <div className="tag red">Recently Added</div>}
               {movie.lists?.includes('leaving') && <div className="tag red">Leaving Soon</div>}
             </div>
-          ))}
+          ))}</div> <NormalPageFooter />
         </div>
        
 
-      </div> <NormalPageFooter />
+      
     </div>
   );
 };

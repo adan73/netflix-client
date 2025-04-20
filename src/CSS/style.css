@@ -1079,7 +1079,7 @@ html, body {
   align-items: center;
   opacity: 0;
   transition: opacity 0.3s ease;
-  background-color: rgba(0, 0, 0, 0.4); /* optional dark background */
+  background-color: rgba(0, 0, 0, 0.4); 
 }
 
 .play-icon {
@@ -1636,12 +1636,17 @@ html, body {
   margin-top: -10px;
   
 }
-
+.browse-page-container  .normalPage-footer{
+  margin-top: -10px;
+  
+}
 .browse-page-container {
   color: white;
   padding: 40px 60px;
 }
-
+.browse-page-container  {
+  padding: 50px 120px;
+}
 .browse-title {
   font-family: "ABeeZee", sans-serif;
   font-weight: 400;
